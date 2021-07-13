@@ -1,0 +1,1685 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [{
+        "hotelCode": 1234,
+        "currencyCode": "AFA",
+        "timeSpan": {
+            "start": "2020-10-01",
+            "end": "2020-11-30",
+            "duration": 60
+        },
+        "dates": [{
+                "date": "2020-10-01",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-02",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-03",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-04",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-05",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-06",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-07",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-08",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-09",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-10",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473494",
+                    "roomExternalCode": "101",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-11",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473494",
+                    "roomExternalCode": "101",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-12",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-13",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-14",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473494",
+                    "roomExternalCode": "101",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-15",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473494",
+                    "roomExternalCode": "101",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-16",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-17",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-18",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473494",
+                    "roomExternalCode": "101",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-19",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473494",
+                    "roomExternalCode": "101",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-20",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-21",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-22",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-23",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-24",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-25",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-26",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-27",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-28",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-29",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-30",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-10-31",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-01",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-02",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-03",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-04",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-05",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-06",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-07",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-08",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-09",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-10",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-11",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-12",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473495",
+                    "roomExternalCode": "102",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-13",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-14",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-15",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-16",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-17",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-18",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-19",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-20",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-21",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-22",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-23",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-24",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-25",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-26",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-27",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-28",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0001",
+                    "ratePlanCode": "3706199",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473493",
+                    "roomExternalCode": "100",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-29",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            },
+            {
+                "date": "2020-11-30",
+                "isAvailable": true,
+                "lengthOfStay": {},
+                "rate": {
+                    "discountOnLowestMinRate": 0.0,
+                    "minRate": 200.0,
+                    "lowestMinRate": 0.0,
+                    "discount": 0.0,
+                    "rateExternalCode": "RP0002",
+                    "ratePlanCode": "3706222",
+                    "ratePlanType": "Regular",
+                    "roomTypeCode": "473496",
+                    "roomExternalCode": "103",
+                    "ratePlanCurrency": "AFA"
+                },
+                "availability": [{
+                    "availStatus": "AvailableForSale"
+                }]
+            }
+        ],
+        "specialCodes": {
+            "code": null,
+            "name": null,
+            "signInRequired": false,
+            "hidePublicRates": false
+        }
+    }],
+    "required": [
+        "hotelCode",
+        "currencyCode",
+        "timeSpan",
+        "dates",
+        "specialCodes"
+    ],
+    "properties": {
+        "hotelCode": {
+            "$id": "#/properties/hotelCode",
+            "type": "integer",
+            "title": "The hotelCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1234
+            ]
+        },
+        "currencyCode": {
+            "$id": "#/properties/currencyCode",
+            "type": "string",
+            "title": "The currencyCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "AFA"
+            ]
+        },
+        "timeSpan": {
+            "$id": "#/properties/timeSpan",
+            "type": "object",
+            "title": "The timeSpan schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [{
+                "start": "2020-10-01",
+                "end": "2020-11-30",
+                "duration": 60
+            }],
+            "required": [
+                "start",
+                "end",
+                "duration"
+            ],
+            "properties": {
+                "start": {
+                    "$id": "#/properties/timeSpan/properties/start",
+                    "type": "string",
+                    "title": "The start schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2020-10-01"
+                    ]
+                },
+                "end": {
+                    "$id": "#/properties/timeSpan/properties/end",
+                    "type": "string",
+                    "title": "The end schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2020-11-30"
+                    ]
+                },
+                "duration": {
+                    "$id": "#/properties/timeSpan/properties/duration",
+                    "type": "integer",
+                    "title": "The duration schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        60
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "dates": {
+            "$id": "#/properties/dates",
+            "type": "array",
+            "title": "The dates schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [{
+                        "date": "2020-10-01",
+                        "isAvailable": true,
+                        "lengthOfStay": {},
+                        "rate": {
+                            "discountOnLowestMinRate": 0.0,
+                            "minRate": 200.0,
+                            "lowestMinRate": 0.0,
+                            "discount": 0.0,
+                            "rateExternalCode": "RP0002",
+                            "ratePlanCode": "3706222",
+                            "ratePlanType": "Regular",
+                            "roomTypeCode": "473495",
+                            "roomExternalCode": "102",
+                            "ratePlanCurrency": "AFA"
+                        },
+                        "availability": [{
+                            "availStatus": "AvailableForSale"
+                        }]
+                    },
+                    {
+                        "date": "2020-10-02",
+                        "isAvailable": true,
+                        "lengthOfStay": {},
+                        "rate": {
+                            "discountOnLowestMinRate": 0.0,
+                            "minRate": 200.0,
+                            "lowestMinRate": 0.0,
+                            "discount": 0.0,
+                            "rateExternalCode": "RP0001",
+                            "ratePlanCode": "3706199",
+                            "ratePlanType": "Regular",
+                            "roomTypeCode": "473493",
+                            "roomExternalCode": "100",
+                            "ratePlanCurrency": "AFA"
+                        },
+                        "availability": [{
+                            "availStatus": "AvailableForSale"
+                        }]
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/dates/items",
+                "anyOf": [{
+                    "$id": "#/properties/dates/items/anyOf/0",
+                    "type": "object",
+                    "title": "The first anyOf schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [{
+                        "date": "2020-10-01",
+                        "isAvailable": true,
+                        "lengthOfStay": {},
+                        "rate": {
+                            "discountOnLowestMinRate": 0.0,
+                            "minRate": 200.0,
+                            "lowestMinRate": 0.0,
+                            "discount": 0.0,
+                            "rateExternalCode": "RP0002",
+                            "ratePlanCode": "3706222",
+                            "ratePlanType": "Regular",
+                            "roomTypeCode": "473495",
+                            "roomExternalCode": "102",
+                            "ratePlanCurrency": "AFA"
+                        },
+                        "availability": [{
+                            "availStatus": "AvailableForSale"
+                        }]
+                    }],
+                    "required": [
+                        "date",
+                        "isAvailable",
+                        "lengthOfStay",
+                        "rate",
+                        "availability"
+                    ],
+                    "properties": {
+                        "date": {
+                            "$id": "#/properties/dates/items/anyOf/0/properties/date",
+                            "type": "string",
+                            "title": "The date schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "2020-10-01"
+                            ]
+                        },
+                        "isAvailable": {
+                            "$id": "#/properties/dates/items/anyOf/0/properties/isAvailable",
+                            "type": "boolean",
+                            "title": "The isAvailable schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        },
+                        "lengthOfStay": {
+                            "$id": "#/properties/dates/items/anyOf/0/properties/lengthOfStay",
+                            "type": "object",
+                            "title": "The lengthOfStay schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {}
+                            ],
+                            "required": [],
+                            "additionalProperties": true
+                        },
+                        "rate": {
+                            "$id": "#/properties/dates/items/anyOf/0/properties/rate",
+                            "type": "object",
+                            "title": "The rate schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [{
+                                "discountOnLowestMinRate": 0.0,
+                                "minRate": 200.0,
+                                "lowestMinRate": 0.0,
+                                "discount": 0.0,
+                                "rateExternalCode": "RP0002",
+                                "ratePlanCode": "3706222",
+                                "ratePlanType": "Regular",
+                                "roomTypeCode": "473495",
+                                "roomExternalCode": "102",
+                                "ratePlanCurrency": "AFA"
+                            }],
+                            "required": [
+                                "discountOnLowestMinRate",
+                                "minRate",
+                                "lowestMinRate",
+                                "discount",
+                                "rateExternalCode",
+                                "ratePlanCode",
+                                "ratePlanType",
+                                "roomTypeCode",
+                                "roomExternalCode",
+                                "ratePlanCurrency"
+                            ],
+                            "properties": {
+                                "discountOnLowestMinRate": {
+                                    "$id": "#/properties/dates/items/anyOf/0/properties/rate/properties/discountOnLowestMinRate",
+                                    "type": "number",
+                                    "title": "The discountOnLowestMinRate schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0.0,
+                                    "examples": [
+                                        0.0
+                                    ]
+                                },
+                                "minRate": {
+                                    "$id": "#/properties/dates/items/anyOf/0/properties/rate/properties/minRate",
+                                    "type": "number",
+                                    "title": "The minRate schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0.0,
+                                    "examples": [
+                                        200.0
+                                    ]
+                                },
+                                "lowestMinRate": {
+                                    "$id": "#/properties/dates/items/anyOf/0/properties/rate/properties/lowestMinRate",
+                                    "type": "number",
+                                    "title": "The lowestMinRate schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0.0,
+                                    "examples": [
+                                        0.0
+                                    ]
+                                },
+                                "discount": {
+                                    "$id": "#/properties/dates/items/anyOf/0/properties/rate/properties/discount",
+                                    "type": "number",
+                                    "title": "The discount schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0.0,
+                                    "examples": [
+                                        0.0
+                                    ]
+                                },
+                                "rateExternalCode": {
+                                    "$id": "#/properties/dates/items/anyOf/0/properties/rate/properties/rateExternalCode",
+                                    "type": "string",
+                                    "title": "The rateExternalCode schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "RP0002"
+                                    ]
+                                },
+                                "ratePlanCode": {
+                                    "$id": "#/properties/dates/items/anyOf/0/properties/rate/properties/ratePlanCode",
+                                    "type": "string",
+                                    "title": "The ratePlanCode schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "3706222"
+                                    ]
+                                },
+                                "ratePlanType": {
+                                    "$id": "#/properties/dates/items/anyOf/0/properties/rate/properties/ratePlanType",
+                                    "type": "string",
+                                    "title": "The ratePlanType schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "Regular"
+                                    ]
+                                },
+                                "roomTypeCode": {
+                                    "$id": "#/properties/dates/items/anyOf/0/properties/rate/properties/roomTypeCode",
+                                    "type": "string",
+                                    "title": "The roomTypeCode schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "473495"
+                                    ]
+                                },
+                                "roomExternalCode": {
+                                    "$id": "#/properties/dates/items/anyOf/0/properties/rate/properties/roomExternalCode",
+                                    "type": "string",
+                                    "title": "The roomExternalCode schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "102"
+                                    ]
+                                },
+                                "ratePlanCurrency": {
+                                    "$id": "#/properties/dates/items/anyOf/0/properties/rate/properties/ratePlanCurrency",
+                                    "type": "string",
+                                    "title": "The ratePlanCurrency schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "AFA"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "availability": {
+                            "$id": "#/properties/dates/items/anyOf/0/properties/availability",
+                            "type": "array",
+                            "title": "The availability schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                [{
+                                    "availStatus": "AvailableForSale"
+                                }]
+                            ],
+                            "additionalItems": true,
+                            "items": {
+                                "$id": "#/properties/dates/items/anyOf/0/properties/availability/items",
+                                "anyOf": [{
+                                    "$id": "#/properties/dates/items/anyOf/0/properties/availability/items/anyOf/0",
+                                    "type": "object",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "examples": [{
+                                        "availStatus": "AvailableForSale"
+                                    }],
+                                    "required": [
+                                        "availStatus"
+                                    ],
+                                    "properties": {
+                                        "availStatus": {
+                                            "$id": "#/properties/dates/items/anyOf/0/properties/availability/items/anyOf/0/properties/availStatus",
+                                            "type": "string",
+                                            "title": "The availStatus schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "AvailableForSale"
+                                            ]
+                                        }
+                                    },
+                                    "additionalProperties": true
+                                }]
+                            }
+                        }
+                    },
+                    "additionalProperties": true
+                }]
+            }
+        },
+        "specialCodes": {
+            "$id": "#/properties/specialCodes",
+            "type": "object",
+            "title": "The specialCodes schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [{
+                "code": null,
+                "name": null,
+                "signInRequired": false,
+                "hidePublicRates": false
+            }],
+            "required": [
+                "code",
+                "name",
+                "signInRequired",
+                "hidePublicRates"
+            ],
+            "properties": {
+                "code": {
+                    "$id": "#/properties/specialCodes/properties/code",
+                    "type": "null",
+                    "title": "The code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "name": {
+                    "$id": "#/properties/specialCodes/properties/name",
+                    "type": "null",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "signInRequired": {
+                    "$id": "#/properties/specialCodes/properties/signInRequired",
+                    "type": "boolean",
+                    "title": "The signInRequired schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "hidePublicRates": {
+                    "$id": "#/properties/specialCodes/properties/hidePublicRates",
+                    "type": "boolean",
+                    "title": "The hidePublicRates schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

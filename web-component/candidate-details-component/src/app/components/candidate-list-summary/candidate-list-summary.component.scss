@@ -1,0 +1,60 @@
+.outer {
+    border: 1px solid #0093e0;
+    border-radius: 1px;
+    display: inline-block;
+    background-color: #f9f9f9;
+    width: auto;
+    height: auto;
+}
+.overall {
+    display: inline-block;
+}
+
+.alignTop {
+    margin: 10px;
+}
+.selected {
+    border-left: 1px solid #0093e0;
+    display: inline-block;
+}
+.rightSide {
+    float: right;
+}
+.rejected {
+    border-left: 1px solid #0093e0;
+    display: inline-block;
+}
+
+.w-100 {
+    margin: 10px;
+    width: 90px;
+    margin-right: 5px;
+}
+
+
+
+
+@media (max-width: 578px) {
+    .outer {
+        border: 1px solid #0093e0;
+        display: inline-block;
+        border-radius: 1px;
+    }
+    .overall {
+        display: inline-block;
+        border-bottom: 1px solid #0093e0;
+    }
+
+    .selected {
+        border-bottom: 1px solid #0093e0;
+        border-left: 0px solid #0093e0;
+        display: inline-block;
+    }
+    .rightSide {
+        float: right;
+    }
+    .rejected {
+        border-left: 0px solid #0093e0;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,67 @@
+/*------------------------------------*\
+  	#Helpers
+\*------------------------------------*/
+/**
+* font variables
+*/
+$default-font-family:'Montserrat',
+sans-serif;
+$font-weight-bold: 700;
+$font-weight-regular: 400;
+
+/**
+* title color variables
+*/
+$title-1-color: var(--amadeus-hos-res-cv-titles-color, $titles-color);
+$title-2-color: var(--amadeus-hos-res-cv-titles-color, $titles-color);
+$title-3-color: var(--amadeus-hos-res-cv-titles-color, $titles-color);
+$title-4-color: var(--amadeus-hos-res-cv-titles-color, $titles-color);
+$title-5-color: var(--amadeus-hos-res-cv-titles-color, $titles-color);
+
+/**
+* button color variables
+*/
+//button text colors
+$primary-button-text-color: var(--amadeus-hos-res-cv-main-cta-text-color, $main-cta-text);
+$secondary-button-text-color: var(--amadeus-hos-res-cv-secondary-cta-text-color, $secondary-cta-text);
+$tertiary-button-text-color: var(--amadeus-hos-res-cv-tertiary-cta-text-color, $tertiary-cta-text);
+$supporting-button-text-color: var(--amadeus-hos-res-cv-supporting-cta-text-color, $supporting-cta-text);
+$disabled-button-text-color: var(--amadeus-hos-res-cv-disabled-cta-text-color, $disabled-cta-text);
+
+//button background colors
+$primary-button-bg-color: var(--amadeus-hos-res-cv-main-cta-bg-color, $main-cta-bg);
+$secondary-button-bg-color: var(--amadeus-hos-res-cv-secondary-cta-bg-color, $secondary-cta-bg);
+$tertiary-button-bg-color: var(--amadeus-hos-res-cv-tertiary-cta-color, $tertiary-cta-bg);
+$supporting-button-bg-color: var(--amadeus-hos-res-cv-supporting-cta-bg-color, $supporting-cta-bg);
+$disabled-button-bg-color: var(--amadeus-hos-res-cv-disabled-cta-bg-color, $disabled-cta-bg);
+
+//button hover background colors
+$primary-button-hover-bg-color: var(--amadeus-hos-res-cv-main-cta-hover-bg-color, $main-cta-hover-bg);
+$secondary-button-hover-bg-color: var(--amadeus-hos-res-cv-secondary-cta-hover-bg-color, $secondary-cta-hover-bg);
+$tertiary-button-hover-bg-color: var(--amadeus-hos-res-cv-tertiary-cta-text-color, $tertiary-cta-text);
+$tertiary-button-hover-text-color: var(--amadeus-hos-res-cv-tertiary-cta-color, $tertiary-cta-bg);
+$supporting-button-hover-bg-color: var(--amadeus-hos-res-cv-supporting-cta-hover-bg-color, $supporting-cta-hover-bg);
+$supporting-button-hover-bg-darker-15-color: var(--amadeus-hos-res-cv-supporting-cta-hover-bg-darkened-15, $supporting-cta-hover-bg-darkened-15);
+
+/**
+* body text color variables
+*/
+$default-body-text-color: var(--amadeus-hos-res-cv-body-text-color, $body-text-color);
+$body-text-links-color: var(--amadeus-hos-res-cv-link-color, $link-color);
+$small-text-color: var(--amadeus-hos-res-cv-body-text-color, $body-text-color);
+$small-text-links-color: var(--amadeus-hos-res-cv-link-color, $link-color);
+
+/**
+* rates color variables
+*/
+$big-rate-color: var(--amadeus-hos-res-cv-rate-color, $rate-color);
+$big-rate-strikethrough-color: var(--amadeus-hos-res-cv-strikethrough-pricing-color, $strikethrough-pricing);
+$small-rate-color: var(--amadeus-hos-res-cv-rate-color, $rate-color);
+$small-rate-strikethrough-color: var(--amadeus-hos-res-cv-strikethrough-pricing-color, $strikethrough-pricing);
+
+/**
+* box-shadow variables
+*/
+$card-box-shadow: 0px 0px 6px $default-box-shadow;
+$selected-card-box-shadow: 0 1px 10px $selected-box-shadow-color;
+$modal-box-shadow: 0 0 30px $modal-box-shadow-color;

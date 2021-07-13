@@ -1,0 +1,30 @@
+{
+  "_from": "tc-comp-style@1.1.0-alpha-18",
+  "_id": "tc-comp-style@1.1.0-alpha-18",
+  "_inBundle": false,
+  "_integrity": "sha1-3KpLIvr51fwOdaviJ9OpTC+T/PU=",
+  "_location": "/tc-comp-style",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "tc-comp-style@1.1.0-alpha-18",
+    "name": "tc-comp-style",
+    "escapedName": "tc-comp-style",
+    "rawSpec": "1.1.0-alpha-18",
+    "saveSpec": null,
+    "fetchSpec": "1.1.0-alpha-18"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://repo-res.travelclick.net:80/artifactory/api/npm/npm/tc-comp-style/-/tc-comp-style-1.1.0-alpha-18.tgz",
+  "_shasum": "dcaa4b22faf9d5fc0e75abe227d3a94c2f93fcf5",
+  "_spec": "tc-comp-style@1.1.0-alpha-18",
+  "_where": "D:\\workspace\\PLATFORM\\RES-WC\\webpack4\\amadeus-hos-res-wc-boilerplate",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Service to include Bootstrap CSS from a common source",
+  "name": "tc-comp-style",
+  "version": "1.1.0-alpha-18"
+}

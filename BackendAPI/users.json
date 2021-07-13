@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "607ea7ac635efb72ecc3e9bd"
+  },
+  "name": "sagar",
+  "email": "sagar@cybage.com",
+  "password": "713d24d3ec59f33e55",
+  "isAdmin": true
+},{
+  "_id": {
+    "$oid": "607ea817635efb72ecc3e9be"
+  },
+  "name": "neha",
+  "email": "neha@cybage.com",
+  "password": "6c392bd3de28f03f",
+  "isAdmin": false
+},{
+  "_id": {
+    "$oid": "607ea82b635efb72ecc3e9bf"
+  },
+  "name": "ajay",
+  "email": "ajay@cybage.com",
+  "password": "633622cbde28f03f",
+  "isAdmin": true
+},{
+  "_id": {
+    "$oid": "607ea83f635efb72ecc3e9c0"
+  },
+  "name": "vishal",
+  "email": "vishal@cybage.com",
+  "password": "743530daff75823d54f2",
+  "isAdmin": false
+},{
+  "_id": {
+    "$oid": "607ea84f635efb72ecc3e9c1"
+  },
+  "name": "asmita",
+  "email": "asmita@cybage.com",
+  "password": "632f2edbea78823d54f2",
+  "isAdmin": false
+}]

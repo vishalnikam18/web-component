@@ -1,0 +1,49 @@
+// @import '../../styles/SCSS/base/common.styles.scss';
+// .stock-template-wrapper {
+//     // Default value is black
+//     background-color: var(--amadeus-hos-res-cv-hello-world-bg-color, $black);
+//     color: $white;
+
+//     hr {
+//         border-color: $white;
+//     }
+
+//     .logo {
+//         animation-duration: 2.7s;
+//         animation-fill-mode: both;
+//         animation-timing-function: ease-in;
+//         animation-name: fadeIn;
+//     }
+
+//     .template-title {
+//         height: $primary-height;
+//         animation-duration: 2.7s;
+//         animation-fill-mode: both;
+//         animation-timing-function: ease-in;
+//         animation-name: fadeIn;
+//     }
+
+//     .table {
+//         background-color: $blue;
+//         color: $black;
+//     }
+
+//     .btn-book {
+//         background: $yellow;
+//         @include amadeusHosResWcBorderRadius(20px);
+//         font-size: 18px;
+//         padding: 7px 60px;
+//         margin-bottom: 4px;
+//         &:hover {
+//             @include amadeusHosResWcBoxShadow(0, 0, 1px, 3px, $grey);
+//             background: $darker-yellow;
+//         }
+
+//         &:focus {
+//             @include amadeusHosResWcBoxShadow(0, 0, 1px, 3px, $grey);
+//             outline: 0;
+//             background: $darker-yellow;
+//             box-shadow: none;
+//         }
+//     }
+// }

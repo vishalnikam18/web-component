@@ -1,0 +1,4 @@
+Project-Name: tc-comp/tc-comp-service/tc-comp-services-1.2.0
+Build-Number: 10
+Git-Commit: e4b3549f24c12d26a0b9bcc019294088b6da2d12
+Build-Date: 2020-12-14 04:08:10.892780

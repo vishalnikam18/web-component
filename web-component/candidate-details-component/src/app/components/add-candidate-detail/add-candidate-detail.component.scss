@@ -1,0 +1,153 @@
+.form {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 1000px;
+    margin-top: -60%;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px 20px;
+}
+
+.modal {
+    display: flex;
+    background-color: #838383a3;
+}
+.modal-content {
+    width: fit-content;
+}
+
+.form-group {
+    padding: 3px;
+    margin: -5px;
+    padding-left: 5px;
+}
+
+label {
+    font-size: 1.1rem;
+    position: relative;
+    display: inline-block;
+    top: 8px;
+}
+
+input {
+    padding: 2px;
+    display: block;
+    width: 100%;
+}
+
+.dateCandidate {
+    padding: 0.5px;
+    display: block;
+    width: 100%;
+}
+
+select {
+    padding: 2px;
+    display: block;
+    width: 100%;
+}
+
+.form-button {
+    justify-content: center;
+}
+.modal-footer {
+    justify-content: center;
+    padding: 15px;
+}
+.p-3 {
+    padding: 0rem !important;
+}
+.modal-header {
+    padding: 15px;
+    background-color: #3e4958;
+    color: #fff;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+}
+
+.reset-btn {
+    width: 300px;
+}
+.btn-primary:active:hover {
+    color: #0082c7;
+    border: 1px solid #0093e0;
+    background-color: #fff;
+}
+span {
+    color: red;
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    top: 8px;
+}
+
+.checkboxes {
+    display: grid;
+    grid-template-columns: 0.1fr 5.2fr;
+    grid-gap: 4px;
+    padding-left: 2%;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: min-content !important;
+    }
+}
+
+.scroll {
+    overflow: auto;
+    height: 100px;
+    width: auto;
+    border: 1px solid black;
+    padding-top: 1rem;
+    scrollbar-width: none;
+}
+
+.scroll .checkboxes {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.close {
+    color: #ffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 0.75;
+}
+
+.close:hover {
+    opacity: 1;
+    color: #ffff;
+}
+
+.tc-modal-header {
+    background-color: #3e4958;
+    color: #fff;
+    padding: 15px;
+}

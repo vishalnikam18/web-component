@@ -1,0 +1,30 @@
+{
+  "_from": "file:tc-comp-services-1.3.0-alpha.tgz",
+  "_id": "tc-comp-services@1.3.0-alpha",
+  "_inBundle": false,
+  "_integrity": "sha512-D+eckU79ADoaQ9jdRp/WLmn9zpVKwwt58ajzwEn6ZIhah34DOHYMflBmrGcvfNVs5JNTMPI5zgcC/mfxwIPJ7A==",
+  "_location": "/tc-comp-services",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "file",
+    "where": "C:\\Users\\prajaktabha\\Desktop\\pp",
+    "raw": "tc-comp-services@file:tc-comp-services-1.3.0-alpha.tgz",
+    "name": "tc-comp-services",
+    "escapedName": "tc-comp-services",
+    "rawSpec": "file:tc-comp-services-1.3.0-alpha.tgz",
+    "saveSpec": "file:tc-comp-services-1.3.0-alpha.tgz",
+    "fetchSpec": "C:\\Users\\prajaktabha\\Desktop\\pp\\tc-comp-services-1.3.0-alpha.tgz"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "C:\\Users\\prajaktabha\\Desktop\\pp\\tc-comp-services-1.3.0-alpha.tgz",
+  "_shasum": "bca2869f1596983b8aed085782350dda0745161a",
+  "_spec": "tc-comp-services@file:tc-comp-services-1.3.0-alpha.tgz",
+  "_where": "C:\\Users\\prajaktabha\\Desktop\\pp",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Services included for handling http requests, caching data, handling interceptor, events, initialization and environment configurations",
+  "name": "tc-comp-services",
+  "version": "1.3.0-alpha"
+}

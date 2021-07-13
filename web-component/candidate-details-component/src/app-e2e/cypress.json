@@ -1,0 +1,8 @@
+{
+    "experimentalShadowDomSupport":true,
+    "experimentalFetchPolyfill":true,
+    "trashAssetsBeforeRuns" : true,
+    "screenshotOnRunFailure": true,
+    "video": false,
+    "videoCompression": 32
+}

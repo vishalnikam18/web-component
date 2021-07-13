@@ -1,0 +1,128 @@
+<nav class="navbar navbar-light fixed-top justify-content-between">
+    <div class="header-content">
+        <img src="../assets/logo.3dd2c446.png">
+        <div class='header-user-details'>
+            <span class="app-heading">{{title}}</span>
+            <div class='user-info' *ngIf="user">
+                <span *ngIf="user">Welcome <span class="uppercase">{{user.name}} |</span> </span><span *ngIf='flag'>Admin</span><span
+                    *ngIf='!flag'>Interviewer</span><span *ngIf="user" (click)='logout()'>| Logout</span>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container" *ngIf="!user">
+    <div class="row justify-content-center vh-100">
+        <div class="col-12 col-md-8 col-lg-6 my-auto">
+            <p class="text-success text-center" *ngIf="successMessage">{{successMessage}}</p>
+            <!-- login form -->
+            <form [formGroup]="loginForm" (ngSubmit)="login()" *ngIf="loginView">
+                <div class="card border-primary rounded-0 shadow-lg">
+                    <div class="card-header p-0">
+                        <div class="bg-info text-white text-center py-3">
+                            <h3>SIGN IN</h3>
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="form-group">
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                </div>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email Id "
+                                    formControlName="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-lock text-info"></i></div>
+                                </div>
+                                <input type="password" class="form-control" id="password" name="password"
+                                    placeholder="Enter your password " formControlName="password">
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <input type="submit" value="Login" class="btn btn-info btn-block rounded-0 mb-3"
+                                [disabled]="!loginForm.valid">
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <a (click)="forgotPassword()" class="text-primary">Forgot Password?</a>
+                            <a (click)="loginView = !loginView" class="text-primary">Register New User</a>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
+            <!-- register user form -->
+
+
+            <form [formGroup]="registerForm" (ngSubmit)="registerUser()" *ngIf="!loginView">
+                <div class="card border-primary rounded-0 shadow-lg">
+                    <div class="card-header p-0">
+                        <div class="bg-info text-white text-center py-3">
+                            <h3>Register User</h3>
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="form-group">
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                </div>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email Id"
+                                    formControlName="email">
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="username" name="username"
+                                    placeholder="Enter your first and last name" formControlName="name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-lock text-info"></i></div>
+                                </div>
+                                <input type="password" class="form-control" id="password" name="password"
+                                    placeholder="Enter your password" formControlName="password">
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <input type="submit" value="Register" class="btn btn-info btn-block rounded-0 mb-3"
+                                [disabled]="!registerForm.valid">
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <!-- <a (click)="forgotPassword()" class="text-primary">Forgot password?</a> -->
+                            <a (click)="loginView = !loginView" class="text-primary">Cancel</a>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            <p class="text-danger text-center">{{errorMessage}}</p>
+
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+<div class="footer">
+    <div class="footer-content">
+        <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40"
+            style="vertical-align: middle;">
+            <g>
+                <path
+                    d="m28.7 24v2.4q0 1.1-0.8 2t-2.1 1.3-2.7 0.8-2.6 0.2q-4.6 0-7.6-3.1t-3.1-7.7q0-4.5 3-7.6t7.6-3q0.7 0 1.7 0.1t2 0.4 2.1 0.7 1.6 1.3 0.6 1.8v2.4q0 0.4-0.4 0.4h-2.6q-0.4 0-0.4-0.4v-1.5q0-1-1.4-1.5t-3.1-0.6q-3.1 0-5.1 2.1t-2 5.3q0 3.3 2.1 5.5t5.2 2.2q1.5 0 3.1-0.5t1.5-1.5v-1.5q0-0.2 0.1-0.3t0.3-0.1h2.6q0.1 0 0.3 0.1t0.1 0.3z m-8.6-18.3q-2.9 0-5.5 1.2t-4.6 3-3 4.6-1.1 5.5 1.1 5.5 3 4.6 4.6 3 5.5 1.2 5.6-1.2 4.5-3 3.1-4.6 1.1-5.5-1.1-5.5-3.1-4.6-4.5-3.1-5.6-1.1z m17.2 14.3q0 4.7-2.3 8.6t-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3 8.6 2.3 6.3 6.2 2.3 8.6z">
+                </path>
+            </g>
+        </svg>
+        2018-2020 Cybage Software Pvt. Ltd. All Rights Reserved.
+    </div>
+</div>

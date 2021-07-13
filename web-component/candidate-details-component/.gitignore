@@ -1,0 +1,15 @@
+*.log
+.DS_Store
+.sonarlint
+dist
+node_modules
+docs
+storybook-static
+
+# using yarn (at least for now) so ignoring other package managers
+package-lock.json
+shrinkwrap.yaml
+coverage
+node_modules
+
+*.tgz

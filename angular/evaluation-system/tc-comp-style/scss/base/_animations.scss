@@ -1,0 +1,40 @@
+/*------------------------------------*\
+  #Animations
+\*------------------------------------*/
+
+/**
+* Contains Animations.
+*
+*/
+//To do - Awaiting Design Spec
+
+//Amadeus loader animation
+@-webkit-keyframes spinnerBounceDelay {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes spinnerBounceDelay {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}

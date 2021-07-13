@@ -1,0 +1,90 @@
+/*------------------------------------*\
+  	#Colors
+\*------------------------------------*/
+/**
+* Contains The Color Variables Used.
+*/
+
+/**
+* Color variables used in low fi designs
+* and to be removed afterwards
+*/
+$white: #ffffff;
+$black: #000000;
+$black-1: #312f2f;
+$grey: #808080;
+$grey-1: #f2f2f2;
+$grey-2: rgba($white, 0.77);
+$grey-3: rgba(128, 128, 128, 0.24);
+$grey-4: #7e7d7d;
+$grey-5: #828282;
+$grey-6: #d2d2d2;
+$grey-7: #f7f7f7;
+
+/**
+* Color variable used for accessibility focus
+*/
+$accessibility-focus-color: var(--amadeus-hos-res-cv-accessibility-focus-color, rgba(38, 143, 255, 0.61));
+
+/**
+* Global color group variables from Hi-Fi design style guide
+* for Amadeus web components
+*/
+$booking-engine-bg: var(--amadeus-hos-res-cv-booking-engine-bg-color, #F7F7F7);
+$rooms-rates-bg: var(--amadeus-hos-res-cv-rooms-rates-bg-color, #FFFFFF);
+$titles-color: #033242;
+$body-text-color: #033242;
+$rate-color: #033242;
+$strikethrough-pricing: #033242;
+$iconography-color: var(--amadeus-hos-res-cv-iconography-color, #076D8F);
+$borders-color: var(--amadeus-hos-res-cv-borders-color, #92B8C4);
+$link-color: #0BA7DB;
+$box-background-color: var(--amadeus-hos-res-cv-box-background-color, #EFF8FA);
+$box-titles-color: var(--amadeus-hos-res-cv-box-titles-color, #033242);
+$box-body-text-color: var(--amadeus-hos-res-cv-box-body-text-color, #033242);
+$box-rate-color: var(--amadeus-hos-res-cv-box-rate-color, #033242);
+$box-strikethrough-pricing: var(--amadeus-hos-res-cv-box-strikethrough-pricing-color, #033242);
+$box-borders-color: var(--amadeus-hos-res-cv-box-borders-color, #6DA0B1);
+$box-link-color: var(--amadeus-hos-res-cv-box-link-color, #0BA7DB);
+$guiding-bar-bg: var(--amadeus-hos-res-cv-guiding-bar-bg-color, #EFF8FA);
+$guiding-bar-text: var(--amadeus-hos-res-cv-guiding-bar-text-color, #033242);
+$booking-mask-bg: var(--amadeus-hos-res-cv-booking-mask-bg-color, #204D5C);
+$booking-mask-text: var(--amadeus-hos-res-cv-booking-mask-text-color, #FFFFFF);
+$booking-mask-edition: var(--amadeus-hos-res-cv-booking-mask-edition-color, #609BAF);
+$best-available-rate: var(--amadeus-hos-res-cv-best-available-rate-color, #B4E571);
+$global-error-message-bg: var(--amadeus-hos-res-cv-global-error-message-bg-color, #FFA40A);
+$global-error-message-text: var(--amadeus-hos-res-cv-global-error-message-text-color, #033242);
+$inline-error-message-text: var(--amadeus-hos-res-cv-inline-error-message-text-color, #F80B0B);
+$main-cta-bg: #F2CF0E;
+$main-cta-text: #033242;
+$secondary-cta-bg: #033242;
+$secondary-cta-text: #F2CF0E;
+$tertiary-cta-bg: #FFFFFF;
+$supporting-cta-bg: #076D8F;
+$supporting-cta-text: #FFFFFF;
+
+/**
+* Other global color group variables from Hi-Fi design style guide
+* for Amadeus web components
+*/
+$body-bg: var(--amadeus-hos-res-cv-body-bg-color, #FFFFFF);
+$tertiary-cta-text:#033242;
+$loading-icon-bg: var(--amadeus-hos-res-cv-loading-icon-bg-color, #0A9DCF);
+$disabled-cta-bg:#EBEBEB;
+$disabled-cta-text:#666666;
+$partition-border-color:var(--amadeus-hos-res-cv-partition-border-color, #E5E5E5);
+$disabled-switch-button-color: var(--amadeus-hos-res-cv-disabled-switch-button-color, #BBBBBB);
+$default-box-shadow: var(--amadeus-hos-res-cv-default-box-shadow-color, #00000029);
+$selected-box-shadow-color: var(--amadeus-hos-res-cv-selected-box-shadow-color, #0A9DCF4D);
+$modal-box-shadow-color:var(--amadeus-hos-res-cv-modal-box-shadow-color, #00000047);
+$supporting-cta-hover-bg: #065D7A;
+
+// colors darkened by 10% than its original value
+$main-cta-hover-bg: #c2a60a;
+
+// colors darkened by 15% than its original value
+$supporting-cta-hover-bg-darkened-15: #033546;
+$iconography-hover-color-darkened-15: var(--amadeus-hos-res-cv-iconography-hover-color-darkened-15, #033546);
+
+// colors lightened by 10% than its original value
+$secondary-cta-hover-bg: #055773;

@@ -1,0 +1,12 @@
+// mixin for box-shadow
+@mixin amadeusHosResWcBoxShadow($hshadow, $vshadow, $blur, $spread, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow: $hshadow $vshadow $blur $spread $color inset;
+        -moz-box-shadow: $hshadow $vshadow $blur $spread $color inset;
+        box-shadow: $hshadow $vshadow $blur $spread $color inset;
+    } @else {
+        -webkit-box-shadow: $hshadow $vshadow $blur $spread $color;
+        -moz-box-shadow: $hshadow $vshadow $blur $spread $color;
+        box-shadow: $hshadow $vshadow $blur $spread $color;
+    }
+}

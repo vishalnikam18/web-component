@@ -1,0 +1,347 @@
+.tableStyle {
+    font-size: 13px;
+    margin: 1% 1% 1% 1%;
+    min-height: 70%;
+}
+
+#myTable {
+    border-collapse: collapse;
+    display: none;
+}
+.editableArea {
+    height: 60%;
+    width: 100%;
+}
+
+.table {
+    counter-reset: section;
+}
+table td {
+    height: 70px;
+    vertical-align: top;
+}
+.tableFixHead {
+    overflow: auto;
+    height: calc(100vh - 427px);
+    width: auto;
+    border: 1px solid #ccc;
+}
+.tableFixHead thead th {
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Just common table stuff. Really. */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    padding: 8px 16px;
+}
+th {
+    color:#0093e0;
+    vertical-align: top;
+    text-align: center;
+    padding:2px;
+    background-color: white;
+}
+
+.errorMessage {
+    width: 100%;
+}
+
+.message {
+    margin: 40%;
+    text-align: center;
+    width: 100%;
+    color: red;
+    font-size: large;
+    text-decoration: solid;
+    font-weight: bolder;
+}
+
+.noCursor {
+    cursor: no-drop;
+    	background-color: #fff; 
+    border: 1px solid #ccc; 
+        color: #0093e0;
+        width : 92px;
+
+}
+
+.Cursor {
+    cursor: pointer;
+    width : 92px;
+}
+
+.closeIconColor {
+    color: #faa61f;
+}
+.IconColor {
+    color: #1f73aa;
+}
+body {
+    min-height: 100%;
+}
+
+
+
+.spaceBetweenDiv {
+    display: inline;
+    justify-content: space-evenly;
+}
+.allowScroll {
+    margin: 4px, 4px;
+    padding: 4px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
+.center {
+    padding-top: 1%;
+}
+.allowScroll {
+    margin: 4px, 4px;
+    padding: 4px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+.equalSize {
+    width: 100%;
+}
+.alignTop {
+    width: 100%;
+}
+.rightBtn {
+    width: 100%;
+    left: 10%;
+}
+.same {
+    width: 60%;
+
+    margin-left: 2rem;
+}
+.col-md-2 {
+    margin-top: 1rem;
+}
+.col-md-8 {
+    margin-top: 1rem;
+}
+
+.widthTen {
+    width: 100px;
+}
+
+.colWidth {
+    width: 50%;
+}
+.dropDown {
+    outline: none;
+    border-color: rgb(207, 192, 192);
+    font-size: smaller;
+}
+.editor {
+    display: flex;
+    justify-content: center;
+    border: 1px dotted black;
+    padding: 5px;
+}
+
+.btnSize {
+    width: 25%;
+    margin-left: 24rem;
+}
+
+.skillArea {
+    height: 170px;
+    width: 100%;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    color: #0093e0;
+}
+
+p {
+    color: #0093e0;
+}
+
+.app-button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+.calender {
+    padding: 5px 0px 5px 0px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.inline {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+button {
+    background-color: white;
+}
+
+
+
+.disableStyle {
+    background-color: #0093e0;
+    color: white;
+    &:hover {
+        color: white;
+    } 
+}
+
+.count:before {
+    counter-increment: section;
+    content: counter(section);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    color: #0093e0;
+    font-weight: bold;
+}
+.themeColor {
+    color: #0093e0;
+}
+.dropdown-toggle {
+    outline: none;
+    border: none;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    color: rgb(51, 184, 236);
+}
+
+.dropdown-toggle:focus {
+    outline: none;
+    border: none;
+}
+
+.dropdown-menu {
+    display: none;
+    min-width: 7rem;
+    padding-left: 1rem;
+}
+.pagination {
+    .page-item {
+        span {
+            display: flex;
+            height: 38px;
+            padding: 5px 15px;
+            vertical-align: sub;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+}
+.pagination {
+    position: relative;
+    padding-top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    span {
+        padding-top: 50%;
+        padding: 2px;
+        text-align: center;
+        color: #0093e0;
+    }
+    li {
+        color: #0093e0;
+    }
+}
+.page-link {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #0093e0;
+}
+
+.widthSame {
+    box-sizing: border-box;
+    width: 120px;
+    vertical-align: top;
+}
+
+.btn-primary {
+    background-color: #0093e0;
+    border-color: #0093e0;
+    &:hover {
+        background-color: #0082c7;
+        border-color: #0093e0;
+    }
+    &:active {
+        background-color: #0082c7 !important;
+        border-color: #0093e0;
+    }
+    &:focus {
+        background-color: #0082c7;
+        border-color: #0093e0;
+    }
+}
+
+.pageNumber {
+    margin: 22px;
+    padding: 20px;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: fantasy;
+    font-variant: normal;
+}
+.divHeight {
+    max-height: 400px;
+}
+svg {
+    color: white;
+}
+
+.widthForInputBox {
+    width: 400px;
+}
+
+.scrolldown {
+    position: inherit;
+    overflow-y: scroll;
+    height: 100%;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

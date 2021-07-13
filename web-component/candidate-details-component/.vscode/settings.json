@@ -1,0 +1,13 @@
+{
+    "editor.tabSize": 4,
+    "editor.detectIndentation": true,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.rulers": [
+        140
+    ],
+    "css.validate": true,
+    "editor.lineNumbers": "on",
+    "editor.matchBrackets": "always",
+    "editor.showUnused": true,
+}

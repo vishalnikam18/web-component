@@ -1,0 +1,4 @@
+Project-Name: tc-comp/tc-comp-style/tc-comp-style-1.1.0
+Build-Number: 18
+Git-Commit: fb226fb6713231adf3ef1dd0eee0134321b0c10e
+Build-Date: 2020-08-28 08:36:50.239307

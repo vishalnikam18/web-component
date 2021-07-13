@@ -1,0 +1,40 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "sourceMap": true,
+        "declaration": false,
+        "downlevelIteration": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noEmitOnError": true,
+        "importHelpers": true,
+        "target": "es5",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "outDir": "dist",
+        "experimentalDecorators": true,
+    },
+    "typedocOptions": {
+        "inputFiles": [
+            "./src/app"
+        ],
+        "mode": "modules",
+        "out": "docs",
+        "plugin": [
+            "typedoc-plugin-external-module-name",
+            "typedoc-plugin-internal-external"
+        ],
+        "exclude": "**/*+(index|.spec|.e2e).ts",
+        "name": "Lit Element Boiletplate"
+    },
+    "include": [
+        "src/app/**/*",
+        "src/index.ts",
+        "src/public-path.ts"
+    ]
+}

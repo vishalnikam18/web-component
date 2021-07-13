@@ -1,0 +1,16 @@
+{
+  "name": "cypress-e2e-test-case",
+  "version": "1.0.0",
+  "description": "Cypress e2e test cases",
+  "main": "index.js",
+  "scripts": {
+    "e2e-run": "npx cypress run",
+    "e2e-open": "npx cypress open"
+  },
+  "author": "TravelClick",
+  "license": "",
+  "devDependencies": {
+    "cypress": "4.11.0"
+  },
+  "dependencies": {}
+}

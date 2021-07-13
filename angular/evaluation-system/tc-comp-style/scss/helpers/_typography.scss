@@ -1,0 +1,102 @@
+/*------------------------------------*\
+  	#Typography
+\*------------------------------------*/
+@import './_functions';
+/**
+*
+* Contains Font-sizes, Line-heights, Font weights Of various Elements.
+*
+*  h1,h2,h3,h4,h5,h6,hr,...
+*/
+
+/**
+* Helper variables for font groups.
+*/
+* {
+    font-family: var(--amadeus-hos-res-cv-font-family,
+            $default-font-family);
+}
+
+/**
+* titles font family and font weight
+*/
+$title-1-font-weight: $font-weight-bold;
+$title-2-font-weight: $font-weight-regular;
+$title-3-font-weight: $font-weight-bold;
+$title-4-font-weight: $font-weight-bold;
+$title-5-font-weight: $font-weight-bold;
+
+/**
+* titles font sizes
+*/
+$title-1-font-size: convertPxToRem(26px);
+$title-2-font-size: convertPxToRem(24px);
+$title-3-font-size: convertPxToRem(22px);
+$title-4-font-size: convertPxToRem(18px);
+$title-5-font-size: convertPxToRem(13px);
+
+/**
+* body text font styles
+*/
+$body-font-size: convertPxToRem(15px);
+$body-text-line-height: convertPxToRem(26px);
+$body-text-font-weight: $font-weight-regular;
+$body-text-letter-spacing: 0.03px;
+
+$body-text-links-font-size: convertPxToRem(15px);
+$body-text-links-line-height: convertPxToRem(23px);
+$body-text-links-font-weight: $font-weight-regular;
+$body-text-links-letter-spacing: 0.03px;
+
+$small-text-font-size: convertPxToRem(13px);
+$small-text-line-height: convertPxToRem(20px);
+$small-text-font-weight: $font-weight-regular;
+$small-text-letter-spacing: 0.13px;
+
+$small-text-links-font-size: convertPxToRem(13px);
+$small-text-links-line-height: convertPxToRem(20px);
+$small-text-links-font-weight: $font-weight-regular;
+$small-text-links-letter-spacing: 0;
+
+/**
+* rates font styles
+*/
+$big-rate-font-size: convertPxToRem(32px);
+$big-rate-line-height: convertPxToRem(48px);
+$big-rate-font-weight: $font-weight-bold;
+$big-rate-letter-spacing: 0;
+
+$big-rate-strikethrough-font-size: convertPxToRem(24px);
+$big-rate-strikethrough-line-height: convertPxToRem(36px);
+$big-rate-strikethrough-font-weight: $font-weight-regular;
+$big-rate-strikethrough-letter-spacing: 0;
+
+$small-rate-font-size: convertPxToRem(24px);
+$small-rate-line-height: convertPxToRem(36px);
+$small-rate-font-weight: $font-weight-bold;
+$small-rate-letter-spacing: 0;
+
+$small-rate-strikethrough-font-size: convertPxToRem(18px);
+$small-rate-strikethrough-line-height: convertPxToRem(27px);
+$small-rate-strikethrough-font-weight: $font-weight-regular;
+$small-rate-strikethrough-letter-spacing: 0;
+
+/**
+* booking mask font styles
+*/
+$dates-font-weight: $font-weight-bold;
+$dates-font-size: convertPxToRem(35px);
+$dates-line-height: convertPxToRem(43px);
+$dates-letter-spacing: 0x;
+$booking-mask-text-font-weight: $font-weight-regular;
+$booking-mask-text-font-size: convertPxToRem(13px);
+$booking-mask-text-line-height: convertPxToRem(16px);
+$booking-mask-text-letter-spacing: 0;
+
+/**
+* button font styles
+*/
+$button-font-size: convertPxToRem(15px);
+$button-text-line-height: convertPxToRem(26px);
+$button-text-font-weight: $font-weight-regular;
+$button-text-letter-spacing: 0.03px;

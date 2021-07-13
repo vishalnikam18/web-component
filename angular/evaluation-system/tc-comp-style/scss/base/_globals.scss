@@ -1,0 +1,933 @@
+/*------------------------------------*\
+  	#Global Styles
+\*------------------------------------*/
+
+// helper files
+@import '../helpers/_colors', '../helpers/_variables';
+
+// base files
+@import '../helpers/_typography', '../helpers/_functions', '../helpers/_mixins', './_animations';
+
+/**
+*
+* Contains common styles as per Amadeus Hi-Fi design style guide
+*
+*/
+
+* {
+    user-select: none;
+}
+
+body {
+    margin: 0;
+}
+
+/**
+* accessibility focus styles
+*/
+*:focus {
+    outline: none !important;
+}
+
+.add-accessibility-focus {
+    box-shadow: 0px 0px 2px 2px $accessibility-focus-color !important;
+}
+
+/**
+*  custom classes for padding
+*/
+.pt-5 {
+    padding-top: 5px !important;
+}
+
+.pt-10 {
+    padding-top: 10px !important;
+}
+
+.pb-10 {
+    padding-bottom: 10px !important;
+}
+
+.p-15 {
+    padding: 15px !important;
+}
+
+.pt-15 {
+    padding-top: 15px !important;
+}
+
+.pb-15 {
+    padding-bottom: 15px !important;
+}
+
+.pl-15 {
+    padding-left: 15px !important;
+}
+
+.pr-15 {
+    padding-right: 15px !important;
+}
+
+/**
+*  custom classes for margin
+*/
+.mr-5 {
+    margin-right: 5px !important;
+}
+
+.ml-10 {
+    margin-left: 10px !important;
+}
+
+.mr-10 {
+    margin-right: 10px !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.mr-15 {
+    margin-right: 15px !important;
+}
+
+.m-15 {
+    margin: 15px !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/**
+*  custom classes for buttons
+*/
+//To be removed afterwards
+.amadeus-hos-res-cn-btn {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 5px 20px;
+    height: 34px;
+    @include amadeusHosResWcBorderRadius($radius: 20px);
+
+    &--primary {
+        color: $white;
+        background: $black-1;
+        border-color: $black-1;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &--secondary {
+        color: $black-1;
+        background: $white;
+        border-color: $black-1;
+
+        &:hover {
+            color: $black-1;
+        }
+    }
+
+    &--link {
+        color: $grey-5;
+        text-decoration: underline;
+        font-size: 0.875rem;
+
+        &:hover {
+            text-decoration: underline;
+            color: $grey-5;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+/**
+*  Styles for 'template wrapper'
+*  Use below classes for template wrapper in your application
+*  <div class="amadeus-hos-res-cn-shop-room-list-template-wrapper amadeus-hos-res-cn-template-wrapper"></div>
+*/
+.amadeus-hos-res-cn-template-wrapper {
+    background: $booking-engine-bg;
+    height: auto;
+}
+
+/**
+*  Custom tag and its styles for 'title-1'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-title-1> Title 1 </amadeus-hos-res-ct-title-1>
+*/
+amadeus-hos-res-ct-title-1 {
+    display: block;
+    color: $title-1-color;
+    font-weight: $title-1-font-weight;
+    font-size: $title-1-font-size;
+    word-break: break-word;
+}
+
+/**
+*  Custom tag and its styles for 'title-2'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-title-2> Title 2 </amadeus-hos-res-ct-title-2>
+*/
+amadeus-hos-res-ct-title-2 {
+    display: block;
+    color: $title-2-color;
+    font-weight: $title-2-font-weight;
+    font-size: $title-2-font-size;
+    word-break: break-word;
+}
+
+/**
+*  Custom tag and its styles for 'title-3'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-title-3> Title 3 </amadeus-hos-res-ct-title-3>
+*/
+amadeus-hos-res-ct-title-3 {
+    display: block;
+    color: $title-3-color;
+    font-weight: $title-3-font-weight;
+    font-size: $title-3-font-size;
+    word-break: break-word;
+}
+
+/**
+*  Custom tag and its styles for 'title-4'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-title-4> Title 4 </amadeus-hos-res-ct-title-4>
+*/
+amadeus-hos-res-ct-title-4 {
+    display: block;
+    color: $title-4-color;
+    font-weight: $title-4-font-weight;
+    font-size: $title-4-font-size;
+    word-break: break-word;
+}
+
+/**
+*  Custom tag and its styles for 'title-5'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-title-5> Title 5 </amadeus-hos-res-ct-title-5>
+*/
+amadeus-hos-res-ct-title-5 {
+    display: block;
+    color: $title-5-color;
+    font-weight: $title-5-font-weight;
+    font-size: $title-5-font-size;
+    word-break: break-word;
+    text-transform: uppercase;
+}
+
+/**
+*  Custom tag and its styles for 'body text'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-body-text> Body text </amadeus-hos-res-ct-body-text>
+*/
+amadeus-hos-res-ct-body-text {
+    display: inline-block;
+    font-size: $body-font-size;
+    line-height: $body-text-line-height;
+    font-weight: $body-text-font-weight;
+    letter-spacing: $body-text-letter-spacing;
+}
+
+/**
+*  Custom tag and its styles for 'small text'
+*  Use below tag in your application
+* <amadeus-hos-res-ct-small-text> Small text </amadeus-hos-res-ct-small-text>
+*/
+amadeus-hos-res-ct-small-text {
+    display: inline-block;
+    font-size: $small-text-font-size;
+    line-height: $small-text-line-height;
+    font-weight: $small-text-font-weight;
+    letter-spacing: $small-text-letter-spacing;
+}
+
+/**
+*  Custom tag and its styles for 'links (regular)'
+*  Use below tag in your application
+* <amadeus-hos-res-ct-link> Link text </amadeus-hos-res-ct-link>
+*/
+amadeus-hos-res-ct-link {
+    display: inline-block;
+    font-size: $body-text-links-font-size;
+    line-height: $body-text-links-line-height;
+    font-weight: $body-text-links-font-weight;
+    letter-spacing: $body-text-links-letter-spacing;
+    color: $body-text-links-color;
+    word-break: break-word;
+    cursor: pointer;
+
+    &:after {
+        content: '\0020 \2192';
+    }
+}
+
+/**
+*  Custom tag and its styles for 'small links'
+*  Use below tag in your application
+* <amadeus-hos-res-ct-small-link> Small link text </amadeus-hos-res-ct-small-link>
+*/
+amadeus-hos-res-ct-small-link {
+    display: inline-block;
+    font-size: $small-text-links-font-size;
+    line-height: $small-text-links-line-height;
+    font-weight: $small-text-links-font-weight;
+    letter-spacing: $small-text-links-letter-spacing;
+    color: $body-text-links-color;
+    word-break: break-word;
+    cursor: pointer;
+
+    &:after {
+        content: '\0020 \2192';
+    }
+}
+
+/**
+*  Custom tag and its styles for 'big rates'
+*  Use below tag in your application
+* <amadeus-hos-res-ct-big-rate>$ 123</amadeus-hos-res-ct-big-rate>
+*/
+amadeus-hos-res-ct-big-rate {
+    display: block;
+    font-size: $big-rate-font-size;
+    line-height: $big-rate-line-height;
+    font-weight: $big-rate-font-weight;
+    letter-spacing: $big-rate-letter-spacing;
+    color: $big-rate-color;
+}
+
+/**
+*  Custom tag and its styles for 'small rates'
+*  Use below tag in your application
+* <amadeus-hos-res-ct-small-rate>$ 123</amadeus-hos-res-ct-small-rate>
+*/
+amadeus-hos-res-ct-small-rate {
+    display: inline-block;
+    font-size: $small-rate-font-size;
+    line-height: $small-rate-line-height;
+    font-weight: $small-rate-font-weight;
+    letter-spacing: $small-rate-letter-spacing;
+    color: $small-rate-color;
+}
+
+/**
+*  Custom tag and its styles for 'strikethrough rate(big)'
+*  Use below tag in your application
+* <amadeus-hos-res-ct-strikethrough-rate>$ 123</amadeus-hos-res-ct-strikethrough-rate>
+*/
+amadeus-hos-res-ct-strikethrough-rate {
+    display: inline-block;
+    font-size: $big-rate-strikethrough-font-size;
+    line-height: $big-rate-strikethrough-line-height;
+    font-weight: $big-rate-strikethrough-font-weight;
+    letter-spacing: $big-rate-strikethrough-letter-spacing;
+    color: $big-rate-strikethrough-color;
+    text-decoration: line-through;
+}
+
+/**
+*  Custom tag and its styles for 'small strikethrough rate'
+*  Use below tag in your application
+* <amadeus-hos-res-ct-small-strikethrough-rate>$ 545</amadeus-hos-res-ct-small-strikethrough-rate>
+*/
+amadeus-hos-res-ct-small-strikethrough-rate {
+    display: inline-block;
+    font-size: $small-rate-strikethrough-font-size;
+    line-height: $small-rate-strikethrough-line-height;
+    font-weight: $small-rate-strikethrough-font-weight;
+    letter-spacing: $small-rate-strikethrough-letter-spacing;
+    color: $small-rate-strikethrough-color;
+    text-decoration: line-through;
+}
+
+/**
+*  Styles for 'CTA - buttons'
+*  Use below classes for buttons in your application
+* 1. Primary button -
+* <button type="button" class="amadeus-hos-res-cn-cta-btn amadeus-hos-res-cn-cta-btn--primary">Primary Button</button>
+*
+* 2. Secondary button-
+* <button type="button" class="amadeus-hos-res-cn-cta-btn amadeus-hos-res-cn-cta-btn--secondary">Secondary Button</button>
+*
+* 3. Tertiary button-
+* <button type="button" class="amadeus-hos-res-cn-cta-btn amadeus-hos-res-cn-cta-btn--tertiary">Tertiary Button</button>
+*
+* 4. Tertiary disabled button-
+* <button type="button" class="amadeus-hos-res-cn-cta-btn amadeus-hos-res-cn-cta-btn--tertiary amadeus-hos-res-cn-cta-btn--disabled">Tertiary Disabled Button</button>
+*
+* 5. Supporting button-
+* <button type="button" class="amadeus-hos-res-cn-cta-btn amadeus-hos-res-cn-cta-btn--supporting">Supporting Button</button>
+*
+* 6. Disabled button-
+* <button type="button" class="amadeus-hos-res-cn-cta-btn amadeus-hos-res-cn-cta-btn--disabled">Disabled Button</button>
+*/
+.amadeus-hos-res-cn-cta-btn {
+    display: inline-block;
+    font-size: $button-font-size;
+    font-weight: $button-text-font-weight;
+    line-height: $button-text-line-height;
+    letter-spacing: $button-text-letter-spacing;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 10px;
+    min-height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    min-width: 247px;
+    line-height: 26px;
+
+    &--primary {
+        color: $primary-button-text-color;
+        background: $primary-button-bg-color;
+        border-color: $primary-button-bg-color;
+
+        svg {
+            fill: $primary-button-text-color;
+        }
+
+        &:hover {
+            background: $primary-button-hover-bg-color;
+            border-color: $primary-button-hover-bg-color;
+        }
+    }
+
+    &--secondary {
+        color: $secondary-button-text-color;
+        background: $secondary-button-bg-color;
+        border-color: $secondary-button-bg-color;
+
+        &:hover {
+            background: $secondary-button-hover-bg-color;
+            border-color: $secondary-button-hover-bg-color;
+        }
+    }
+
+    &--tertiary {
+        color: $tertiary-button-text-color;
+        background: $tertiary-button-bg-color;
+        border-color: $tertiary-button-text-color;
+
+        svg {
+            fill: $tertiary-button-text-color;
+            margin-top: -4px;
+            margin-right: 2px;
+        }
+
+        &:hover {
+            background: $tertiary-button-text-color;
+            color: $tertiary-button-bg-color;
+
+            svg {
+                fill: $tertiary-button-bg-color;
+            }
+        }
+
+        &.amadeus-hos-res-cn-cta-btn--disabled {
+            color: $disabled-button-text-color;
+            background: $disabled-button-bg-color;
+            border-color: $disabled-button-text-color;
+            cursor: default;
+
+            svg {
+                fill: $disabled-button-text-color;
+            }
+
+            &:hover {
+                background: $disabled-button-bg-color;
+            }
+        }
+    }
+
+    &--supporting {
+        color: $supporting-button-text-color;
+        background: $supporting-button-bg-color;
+        border-color: $supporting-button-bg-color;
+
+        &:hover {
+            background: $supporting-button-hover-bg-color;
+        }
+    }
+
+    &--disabled {
+        color: $disabled-button-text-color;
+        background: $disabled-button-bg-color;
+        border-color: $disabled-button-bg-color;
+        cursor: default !important;
+
+        &:hover {
+            background: $disabled-button-bg-color;
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+/**
+*  Custom tag and its styles for 'icon buttons'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-icon-btn>${IconTemplate()}</amadeus-hos-res-ct-icon-btn>
+*  <amadeus-hos-res-ct-arrow-btn>${IconTemplate()}</amadeus-hos-res-ct-arrow-btn>
+*/
+amadeus-hos-res-ct-icon-btn,
+amadeus-hos-res-ct-arrow-btn {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: $supporting-button-bg-color;
+
+    &:hover {
+        background-color: $supporting-button-hover-bg-darker-15-color;
+    }
+
+    svg {
+        fill: $supporting-button-text-color;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+/**
+*  Custom tag and its styles for 'radio button'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-radio-btn>
+        <label class="amadeus-hos-res-cn-radio-btn">
+            Radio button label
+            <input type="radio" name="radio" checked="checked">
+            <div class="amadeus-hos-res-cn-radio-btn_indicator"></div>
+        </label>
+   </amadeus-hos-res-ct-radio-btn>
+*/
+amadeus-hos-res-ct-radio-btn {
+    .amadeus-hos-res-cn-radio-btn {
+        display: block;
+        position: relative;
+        margin-bottom: 7px;
+        padding: 6px 30px;
+        cursor: pointer;
+
+        input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+
+            &:focus~.amadeus-hos-res-cn-radio-btn_indicator {
+                background: $body-bg;
+            }
+
+            &:checked~.amadeus-hos-res-cn-radio-btn_indicator {
+                background: $supporting-button-bg-color;
+
+                &:after {
+                    display: block;
+                }
+            }
+
+            &:checked {
+                &:focus~.amadeus-hos-res-cn-radio-btn_indicator {
+                    background: $supporting-button-bg-color;
+                }
+            }
+
+            &:disabled~.amadeus-hos-res-cn-radio-btn_indicator {
+                background: $body-bg;
+                opacity: 0.6;
+                pointer-events: none;
+                cursor: default;
+            }
+        }
+    }
+
+    .amadeus-hos-res-cn-radio-btn_indicator {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        height: 26px;
+        width: 26px;
+        background: $body-bg;
+        border: 1px solid $supporting-button-bg-color;
+        border-radius: 50%;
+
+        &:after {
+            box-sizing: unset;
+            content: '';
+            position: absolute;
+            display: none;
+        }
+    }
+
+    .amadeus-hos-res-cn-radio-btn-radio {
+        .amadeus-hos-res-cn-radio-btn_indicator {
+            border-radius: 50%;
+
+            &:after {
+                left: 6px;
+                top: 6px;
+                height: 12px;
+                width: 12px;
+                border-radius: 50%;
+                background: $body-bg;
+                transition: background 250ms;
+            }
+        }
+
+        input {
+            &:disabled~.amadeus-hos-res-cn-radio-btn_indicator {
+                border: 1px solid $disabled-switch-button-color;
+                cursor: default;
+
+                &:after {
+                    background: $disabled-switch-button-color;
+                    cursor: default;
+                }
+            }
+        }
+    }
+}
+
+/**
+*  Custom tag and its styles for 'checkbox'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-checkbox>
+        <label class="amadeus-hos-res-cn-checkbox">
+            Checkbox label
+            <input type="checkbox" checked="checked">
+            <div class="amadeus-hos-res-cn-checkbox_indicator"></div>
+        </label>
+    </amadeus-hos-res-ct-checkbox>
+*/
+amadeus-hos-res-ct-checkbox {
+    .amadeus-hos-res-cn-checkbox {
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 5px;
+        padding-top: 3px;
+        cursor: pointer;
+
+        input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+
+            &:focus~.amadeus-hos-res-cn-checkbox_indicator {
+                background: $body-bg;
+            }
+
+            &:checked~.amadeus-hos-res-cn-checkbox_indicator {
+                background: $body-bg;
+
+                &:after {
+                    display: block;
+                }
+            }
+
+            &:checked {
+                &:focus~.amadeus-hos-res-cn-checkbox_indicator {
+                    background: $body-bg;
+                }
+            }
+
+            &:disabled~.amadeus-hos-res-cn-checkbox_indicator {
+                background: $body-bg;
+                pointer-events: none;
+                cursor: default;
+            }
+        }
+
+        &:hover {
+            input~.amadeus-hos-res-cn-checkbox_indicator {
+                background: $body-bg;
+            }
+
+            input {
+                &:not([disabled]) {
+                    &:checked~.amadeus-hos-res-cn-checkbox_indicator {
+                        background: $body-bg;
+                    }
+                }
+            }
+        }
+    }
+
+    .amadeus-hos-res-cn-checkbox_indicator {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        height: 19px;
+        width: 19px;
+        background: $body-bg;
+        border: 1px solid $supporting-button-bg-color;
+        border-radius: 0px;
+
+        &:after {
+            box-sizing: unset;
+            content: '';
+            position: absolute;
+            display: none;
+        }
+    }
+
+    .amadeus-hos-res-cn-checkbox-checkbox {
+        .amadeus-hos-res-cn-checkbox_indicator {
+            &:after {
+                left: 5.5px;
+                top: -0.5px;
+                width: 5px;
+                height: 10px;
+                border: solid $supporting-button-bg-color;
+                border-width: 0 2.5px 2.5px 0;
+                transform: rotate(45deg);
+            }
+        }
+
+        input {
+            &:disabled~.amadeus-hos-res-cn-checkbox_indicator {
+                border: 1px solid $disabled-switch-button-color;
+                cursor: default;
+
+                &:after {
+                    border-color: $disabled-switch-button-color;
+                    cursor: default;
+                }
+            }
+        }
+    }
+}
+
+/**
+*  Custom tag and its styles for 'start over'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-start-over>${StartOverIconTemplate()} Start over</amadeus-hos-res-ct-start-over>
+*/
+amadeus-hos-res-ct-start-over {
+    display: inline-block;
+    font-size: $small-text-font-size;
+    color: $supporting-button-bg-color;
+    font-weight: $font-weight-bold;
+
+    svg {
+        fill: $supporting-button-bg-color;
+        margin-right: 5px;
+        margin-top: -2px;
+    }
+}
+
+/**
+*  Custom tag and its styles for 'link button - more info (info icon)'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-more-info>${InfoIconTemplate()}</amadeus-hos-res-ct-more-info>
+*/
+amadeus-hos-res-ct-more-info {
+    display: inline-block;
+    cursor: pointer;
+
+    svg {
+        fill: $body-text-links-color;
+    }
+}
+
+/**
+*  Custom tag and its styles for 'link button - edit (edit icon)'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-edit>${EditIconTemplate()}</amadeus-hos-res-ct-edit>
+*/
+amadeus-hos-res-ct-edit {
+    display: inline-block;
+    cursor: pointer;
+
+    svg {
+        fill: $body-text-links-color;
+    }
+}
+
+/**
+*  Custom tag and its styles for 'link button - delete (delete icon)'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-delete>${DeleteIconTemplate()}</amadeus-hos-res-ct-delete>
+*/
+amadeus-hos-res-ct-delete {
+    display: inline-block;
+    cursor: pointer;
+
+    svg {
+        fill: $inline-error-message-text;
+    }
+}
+
+/**
+*  Styles for 'tabs'
+*  Use below classes for buttons in your application
+*  <div class="tabs-component amadeus-hos-res-cn-tabs">
+    *  <ul class="nav nav-tabs" id="amadeus-hos-res-id-shop-room-details-tabs" role="tablist">
+            <li class="nav-item">
+                <a data-toggle="tab" href="javascript:void(0);" class="nav-link active-new">Tab 1</a>
+            </li>
+            <li class="nav-item">
+                <a data-toggle="tab" href="javascript:void(0);" class="nav-link active-new">Tab 2</a>
+            </li>
+        </ul>
+        <div class="tab-content"></div>
+*   </div>
+*/
+
+.amadeus-hos-res-cn-tabs {
+    ul {
+        margin: 0;
+        padding-inline-start: 0;
+        padding: 40px 48px 0 48px;
+        border: none;
+
+        .nav-item {
+            margin-right: 40px;
+
+            a {
+                padding: 0.5rem 0;
+
+                &.nav-link {
+                    border: none;
+                    font-size: $body-font-size;
+                    font-weight: $font-weight-bold;
+                    letter-spacing: 0.15px;
+                    color: $supporting-button-bg-color;
+                    border-radius: 0;
+
+                    &:hover {
+                        border-bottom: 3px solid $body-text-links-color;
+                    }
+                }
+
+                &.active-new {
+                    border-bottom: 3px solid $body-text-links-color;
+                    color: $body-text-links-color;
+
+                    &:hover {
+                        border-top: transparent;
+                        border-left: transparent;
+                        border-right: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 40px 48px;
+        background-color: $box-background-color;
+        color: $default-body-text-color;
+    }
+}
+
+/**
+*  Custom tag and its styles for 'amenities icons'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-amenity-icon>${AmenityIconTemplate()}</amadeus-hos-res-ct-amenity-icon>
+*/
+amadeus-hos-res-ct-amenity-icon {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    height: 24px;
+    width: 24px;
+
+    svg {
+        fill: $iconography-color;
+
+        &:hover {
+            fill: $iconography-hover-color-darkened-15;
+        }
+    }
+}
+
+/**
+*  Custom tag and its styles for 'room configuration'
+*  Use below tag in your application
+*  <amadeus-hos-res-ct-room-config class="amadeus-hos-res-cn-bedding-config">
+        <p class="config-label d-none d-lg-block">Config label (e.g. Max capacity)</p>
+        <div class="config-item">
+            <span class="d-none d-lg-block">${ConfigIconTemplate()}</span>
+            <span>Config label</span>
+        </div>
+    </amadeus-hos-res-ct-room-config>
+*/
+amadeus-hos-res-ct-room-config {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 16px;
+
+    &.amadeus-hos-res-cn-bedding-config {
+        p.config-label {
+            font-size: convertPxToRem(13px);
+            font-weight: $font-weight-bold;
+            line-height: convertPxToRem(20px);
+            letter-spacing: 0;
+            color: $default-body-text-color;
+            margin-bottom: 9px;
+        }
+
+        .config-item {
+            display: inline-flex;
+
+            svg {
+                margin-right: 5px;
+                fill: $default-body-text-color;
+                margin-top: -4px;
+            }
+
+            span {
+                font-size: convertPxToRem(15px);
+                font-weight: $font-weight-regular;
+                line-height: convertPxToRem(26px);
+                letter-spacing: 0.03;
+                color: $default-body-text-color;
+            }
+        }
+    }
+}
+
+/**
+*  Styles for 'room/rate card backgrounds'
+*  Use below classes for room/rate list tile/card wrapper in your application
+*  For rates - <div class="container-fluid rate-list-wrapper amadeus-hos-res-cn-card/"></div>
+*  For rooms - <div class="container-fluid room-list-wrapper amadeus-hos-res-cn-card/"></div>
+*  For selected rates - <div class="container-fluid rate-list-wrapper amadeus-hos-res-cn-card selected"></div>
+*  For selected rooms - <div class="container-fluid room-list-wrapper amadeus-hos-res-cn-card selected"></div>
+*/
+.amadeus-hos-res-cn-card {
+    background-color: $rooms-rates-bg;
+    @include amadeusHosResWcBorderRadius(var(--amadeus-hos-res-cv-card-border-radius, 0));
+
+    &:hover {
+        box-shadow: $card-box-shadow;
+    }
+
+    &.selected {
+        border: 1px solid $body-text-links-color;
+        background: $box-background-color;
+        box-shadow: $selected-card-box-shadow;
+    }
+}
